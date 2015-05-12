@@ -1,6 +1,6 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:
+# Provides:          serialosc
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
@@ -9,9 +9,9 @@
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
 
-dir="/usr/local/sbin/"
+dir="/usr/local/bin/"
 user="root"
-cmd="serialosc"
+cmd="serialoscd"
 
 name=`basename $0`
 pid_file="/var/run/$name.pid"
