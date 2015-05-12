@@ -9,9 +9,9 @@
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
 
-dir=""
-user=""
-cmd=""
+dir="/usr/local/sbin/"
+user="root"
+cmd="serialosc"
 
 name=`basename $0`
 pid_file="/var/run/$name.pid"
